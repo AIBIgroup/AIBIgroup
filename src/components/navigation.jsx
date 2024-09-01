@@ -16,7 +16,7 @@ import React from "react";export const Navigation = (props) => {
                   <span className="icon-bar"></span>{" "}
                </button>
                <a className="navbar-brand page-scroll" href="#page-top">
-                  <img src="img/portfolio/logo.png" width="100%" alt="" />
+                  <img src="img/logo.png" width="80%" style={{ marginTop: "-10px" }} />
                </a>{" "}
             </div>
 

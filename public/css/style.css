@@ -245,6 +245,8 @@ header .intro-text {
 /* Features Section */
 #features {
    background: #f6f6f6;
+   /* position: relative; */
+   width: 100%;
 }
 #features i.fa {
    font-size: 24px;
@@ -266,6 +268,14 @@ header .intro-text {
    width: 178px;
    height: 68px;
    font-family: "Gilroy", Helvetica, sans-serif;
+}
+.features-logotype {
+   position: absolute; /* Absolutely positioned relative to the nearest positioned ancestor */
+   bottom: 0; 
+   right: 0; 
+   padding: 10px;
+   background-color: skyblue;
+   color: white;
 }
 
 /* .rightbottom{
