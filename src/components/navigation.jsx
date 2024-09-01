@@ -1,5 +1,4 @@
-import React from "react";
-export const Navigation = (props) => {
+import React from "react";export const Navigation = (props) => {
    return (
       <nav id="menu" className="navbar navbar-default navbar-fixed-top">
          <div className="container">
@@ -38,12 +37,12 @@ export const Navigation = (props) => {
                   </li>
                   <li>
                      <a href="#services" className="page-scroll">
-                        Careerss
+                        Benefit Calculator
                      </a>
                   </li>
                   <li>
                      <a href="#portfolio" className="page-scroll">
-                        News & Insights
+                        Contact Us
                      </a>
                   </li>
                </ul>
