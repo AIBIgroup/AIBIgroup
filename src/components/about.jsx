@@ -15,7 +15,7 @@ export const About = (props) => {
                      </div>
                      <p>{props.data ? props.data.paragraph : "loading..."}</p>
                      <div className="features-logotype">
-                        <img src="img/logo_white.png" alt="" />
+                        <img src="img/logo1.png" alt="" />
                      </div>
                      {/* <div className="rightbottom">
                 <img src="img/portfolio/logo.png" alt="" />
