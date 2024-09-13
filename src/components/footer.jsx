@@ -5,7 +5,7 @@ export const Footer = (props) => {
          <div className="container">
             <img src="img/portfolio/logo1.png" alt="" />
             <div className="footer-navigation">
-               <a href="#">Our Teams</a>
+               <a href="#">Our </a>
                <a href="#">What We Do</a>
                <a href="#">Careers</a>
                <a href="#">News & Insights</a>

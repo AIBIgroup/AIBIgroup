@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
    font-family: Arial, Helvetica, sans-serif;
    text-rendering: optimizeLegibility !important;
    -webkit-font-smoothing: antialiased !important;
@@ -72,6 +73,11 @@ hr {
 #menu {
    padding: 15px;
    transition: all 0.8s;
+   position: static; /* or you can use 'relative' if needed */
+   top: auto;
+   left: auto;
+   right: auto;
+   bottom: auto;
 }
 #menu.navbar-default {
    background-color: #fff;
@@ -102,7 +108,7 @@ hr {
    bottom: -1px;
    width: 0;
    height: 2px;
-   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+   background: linear-gradient(to right, #e1b720 0%, #f3c82e 100%);
    content: "";
    transition: width 0.2s;
 }
@@ -123,7 +129,7 @@ hr {
    bottom: -1px !important;
    width: 100% !important;
    height: 2px !important;
-   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+   background: linear-gradient(to right, #e1b720 0%, #f3c82e 100%);
    content: "" !important;
    transition: width 0.2s !important;
 }
@@ -133,10 +139,10 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
    background-color: #fff;
-   border-color: #608dfd;
+   border-color: rgba(221, 172, 23, 1);
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-   background-color: #608dfd;
+   background-color: rgba(221, 172, 23, 1);
 }
 
 .section-title h2 {
@@ -145,16 +151,7 @@ hr {
    margin-bottom: 15px;
    padding-bottom: 15px;
 }
-/* .section-title h2::after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
-  margin-left: -30px;
-  left: 50%;
-} */
+
 .section-title p {
    font-size: 18px;
 }
@@ -215,6 +212,7 @@ a:focus,
 .intro .overlay {
    background: rgba(0, 0, 0, 0.158);
 }
+
 .intro h1 {
    font-family: "Gilroy", sans-serif;
    color: #fff;
@@ -266,6 +264,7 @@ header .intro-text {
    background-color: transparent;
    width: 178px;
    height: 68px;
+
    font-family: "Gilroy", Helvetica, sans-serif;
 }
 .features-logotype {
@@ -293,9 +292,12 @@ header .intro-text {
 } */
 #about h2 {
    position: relative;
-   margin-top: 20px;
+   margin-top: 50px;
    margin-bottom: 15px;
    padding-bottom: 15px;
+   color: #202020;
+   font-size: 40px;
+   white-space: nowrap;
 }
 
 #about .about-text li {
@@ -844,4 +846,438 @@ label {
    #about img {
       margin: 50px 0;
    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+}
+
+#about {
+   width: 100%;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+.columns-wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+}
+
+.left-column {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: calc(50% - 30px);
+   margin-left: 20px;
+}
+
+.about-text {
+   margin-bottom: 20px;
+}
+
+.features-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   margin: 20px 0;
+}
+
+.features-blocks {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100%;
+}
+
+.features-block,
+.additional-block {
+   position: relative;
+   background-color: #f0f0f0;
+   border-radius: 30px;
+   color: #a0a0a0;
+   font-family: "Manrope", sans-serif;
+   padding: 20px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   height: 220px;
+   transition: 0.3s;
+   transform: 0.3s;
+}
+
+.features-block:hover,
+.additional-block:hover {
+   background-color: #ddac17;
+   transform: scale(1.07);
+   color: #ffffff;
+}
+
+.text-left {
+   text-align: left;
+   color: rgba(32, 32, 32, 1);
+   padding-top: 18%;
+}
+
+.features-block {
+   width: calc(50% - 10px);
+}
+
+.additional-block {
+   width: 100%;
+   margin-top: 20px;
+}
+
+.features-block::before,
+.additional-block::before {
+   content: attr(data-number);
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #a0a0a0;
+   background-color: #ffffff;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.features-block:hover::before,
+.additional-block:hover::before {
+   color: #ffffff;
+   background-color: #ddac17;
+}
+
+.benefit-calculator {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   color: #a0a0a0;
+   font-weight: regular;
+   font-size: 30px;
+}
+
+.calculator-description {
+   margin-top: 20px;
+   color: #a0a0a0;
+   font-weight: regular;
+   font-size: 13px;
+}
+
+.textarea-container {
+   position: relative;
+}
+
+.input-field {
+   width: 450px;
+   height: 40px;
+   margin: 130px 20px 18px 20px;
+   padding: 10px 40px 10px 5px;
+   border-radius: 15px;
+   border: 1px solid #c0c0c0;
+   box-sizing: border-box;
+   font-family: "Manrope", sans-serif;
+   font-size: 14px;
+   color: #a0a0a0;
+   resize: none;
+   overflow: hidden;
+}
+
+.image-button {
+   position: absolute;
+   top: 80%;
+   right: 40px;
+   transform: translateY(-50%);
+   background: transparent;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+}
+
+.image-button img {
+   display: block;
+   width: 30px;
+   height: 30px;
+}
+
+.textarea-label {
+   position: absolute;
+   left: 20px;
+   top: 100%;
+   font-size: 24px;
+   font-family: "Manrope", sans-serif;
+   color: #a0a0a0;
+   margin-top: 60px;
+}
+
+.right-column {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: calc(50% - 30px);
+   margin-right: 20px;
+}
+.benefit-calculator {
+   font-family: "Manrope", sans-serif;
+}
+.calculator-description {
+   font-family: "Manrope", sans-serif;
+}
+.big-block {
+   width: 100%;
+   max-width: 500px;
+   height: 690px;
+   background-color: #f0f0f0;
+   border-radius: 30px;
+   margin-top: 90px;
+   position: relative;
+}
+
+@media (max-width: 767px) {
+   .columns-wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .left-column,
+   .right-column {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+   }
+
+   .left-column {
+      margin-left: 0;
+      margin-bottom: 20px;
+   }
+
+   .right-column {
+      margin-right: 0;
+   }
+
+   .features-wrapper {
+      margin: 10px 0;
+   }
+
+   .features-blocks {
+      gap: 10px;
+   }
+
+   .features-block,
+   .additional-block {
+      width: 100%;
+      height: auto;
+      text-align: left;
+      margin-bottom: 10px;
+   }
+
+   .big-block {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 20px;
+   }
+}
+
+#intro {
+   padding-top: 2%;
+}
+.row2 {
+   display: flex;
+   flex-direction: row;
+   height: 80vh;
+   justify-content: space-between;
+}
+.row2 .main {
+   display: flex;
+   flex-direction: column;
+   width: 58%;
+   padding: 0 3%;
+   justify-content: space-around;
+   height: 100%;
+   border-radius: 30px;
+   background-color: rgba(221, 172, 23, 1);
+}
+.row2 .main .logo img {
+   width: 18%;
+}
+.row2 .title p {
+   font-size: 46px;
+   color: rgba(252, 252, 252, 1);
+   font-family: "Manrope", system-ui;
+   font-weight: 400;
+}
+.row2 .title p span {
+   font-family: "Manrope", system-ui;
+   font-weight: 700;
+}
+
+.row2 .main-footer {
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.row2 .main-footer p {
+   font-size: 14px;
+   color: rgba(252, 252, 252, 1);
+   font-family: "Manrope", system-ui;
+   font-weight: 400;
+}
+.row2 .main-footer p img {
+   margin-right: 8px;
+}
+
+.row2 .crm {
+   background-color: rgba(240, 240, 240, 1);
+   width: 41%;
+   border-radius: 30px;
+   padding: 5% 3%;
+}
+.row2 .crm .title {
+   height: 7%;
+   margin-bottom: 7%;
+}
+.row2 .crm h1 {
+   font-family: "Manrope", system-ui;
+   font-size: 32px;
+   font-weight: 400;
+   color: rgba(32, 32, 32, 1);
+}
+.row2 .form {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   position: relative;
+   height: 70%;
+   justify-content: space-between;
+}
+.form .MuiFilledInput-root {
+   background-color: rgba(252, 252, 252, 1);
+   height: 45px;
+   border-radius: 20px;
+   align-items: center;
+}
+
+.form .MuiFilledInput-root:before {
+   border-bottom: none;
+}
+.form .MuiFilledInput-root:after {
+   border-bottom: none;
+}
+.form .MuiFilledInput-root:hover {
+   background-color: rgba(252, 252, 252, 1);
+}
+
+.form .MuiFilledInput-root.Mui-focused {
+   background-color: rgba(252, 252, 252, 1);
+}
+
+.form .MuiFilledInput-root:hover .MuiInputBase-root {
+   background-color: rgba(221, 172, 23, 1);
+}
+
+.form .MuiInputLabel-root.Mui-focused {
+   color: rgba(32, 32, 32, 1);
+   /* color: rgba(221, 172, 23, 1); */
+}
+
+.form .MuiInputBase-input {
+   color: rgba(32, 32, 32, 1);
+}
+.form .MuiFormControl-root {
+   width: 100%;
+}
+.form .MuiInputBase-input {
+   font-size: 14px;
+   font-family: "Manrope", sans-serif;
+   width: 90px;
+   margin: 0;
+}
+.form .MuiInputLabel-root {
+   font-size: 12px;
+   font-family: "Manrope", sans-serif;
+   margin: 0;
+}
+.form .MuiButton-contained {
+   background-color: rgba(32, 32, 32, 1); /* Background color */
+   font-family: "Manrope", sans-serif; /* Font family */
+   font-size: 12px; /* Font size */
+   height: 40px; /* Height of the button */
+   padding: 0 16px; /* Adjust padding for the button */
+   border-radius: 20px;
+   margin-top: 5%;
+}
+
+#actions {
+   padding-top: 2%;
+}
+.actions {
+   display: flex;
+   flex-direction: row;
+   background-color: rgba(240, 240, 240, 1);
+   border-radius: 30px;
+   justify-content: flex-start;
+   padding: 2% 4% 0 0;
+   height: 35vh;
+   align-items: center;
+}
+.mockup img {
+   height: 100%;
+}
+.actions .text {
+   max-width: 35%;
+   margin: 0 18% 0 9%;
+}
+.actions .text h4 {
+   font-size: 35px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   color: rgba(32, 32, 32, 1);
+}
+.actions .text p {
+   font-size: 16px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   color: rgba(160, 160, 160, 1);
+}
+.social-media {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 60%;
+}
+.social-media a {
+   font-size: 16px;
+   font-family: "Manrope", sans-serif;
+   padding: 10px 15px;
+   border-radius: 15px;
+   transform: 0.3s;
+}
+.social-media a:hover {
+   transform: scale(1.05);
+}
+#wa {
+   background-color: rgba(0, 229, 16, 1);
+   color: rgba(252, 252, 252, 1);
+}
+#insta {
+   background: linear-gradient(
+      45deg,
+      rgb(193, 53, 132),
+      /* Pink */ rgb(255, 45, 85),
+      /* Purple */ rgb(255, 196, 0) /* Yellow */
+   );
+   color: rgba(252, 252, 252, 1);
 }

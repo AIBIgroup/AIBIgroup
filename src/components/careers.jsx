@@ -8,7 +8,7 @@ export const Careers = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
+                <h1>{props.data}
                 Work with Exceptional Talent
                   <span></span>
                 </h1>

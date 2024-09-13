@@ -5,7 +5,7 @@ export const Navigation = (props) => {
     <nav
       id="menu"
       className="navbar navbar-default navbar-fixed-top"
-      style={{ backgroundColor: "#231F20" }} // Added background color here
+      style={{ backgroundColor: "#FFFF" }} // Added background color here
     >
       <div className="container">
         <div className="navbar-header">
@@ -32,23 +32,23 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll" style={{ color: "#FFFFFF" }}>
-                Home
+              <a href="#intro" className="page-scroll" style={{ color: "#000000" }}>
+                Главная
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll" style={{ color: "#FFFFFF" }}>
-                Offers
+              <a href="#about" className="page-scroll" style={{ color: "#000000" }}>
+                Предложения
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll" style={{ color: "#FFFFFF" }}>
-                Benefit Calculator
+              <a href="#services" className="page-scroll" style={{ color: "#000000" }}>
+                О нас
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll" style={{ color: "#FFFFFF" }}>
-                About us
+              <a href="#portfolio" className="page-scroll" style={{ color: "#0000" }}>
+
               </a>
             </li>
           </ul>

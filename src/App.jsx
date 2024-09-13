@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
+import { Intro } from "./components/intro";
 // import { Features } from "./components/features";
 import { About } from "./components/about";
+import { Actions } from "./components/actions";
 import { Services } from "./components/services";
 // import { Gallery } from "./components/gallery";
 // import { Testimonials } from "./components/testimonials";
@@ -19,37 +21,32 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
+   speed: 1000,
+   speedAsDuration: true,
 });
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
+   const [landingPageData, setLandingPageData] = useState({});
+   useEffect(() => {
+      setLandingPageData(JsonData);
+   }, []);
 
-  return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      {/* <Features data={landingPageData.Features} /> */}
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Video data={landingPageData.Video} />
-      <Statistics data={landingPageData.Statistics} />
-      <Careers data={landingPageData.Careers} />
-      <News data={landingPageData.News} />
-      <Footer data={landingPageData.Footer} />
-      {/* <Slider data={landingPageData.Slider} /> */}
-
-
-      {/* <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} /> */}
-    </div>
-  );
+   return (
+      <div>
+         <Navigation />
+         <Intro data={landingPageData.Intro} />
+         <About data={landingPageData.About} />
+         <Actions data={landingPageData.Actions} />
+         <Footer data={landingPageData.Footer} />
+         {/* <Services data={landingPageData.Services} /> */}
+         {/* <Video data={landingPageData.Video} /> */}
+         {/* <Statistics data={landingPageData.Statistics} /> */}
+         {/* <Careers data={landingPageData.Careers} /> */}
+         {/* <News data={landingPageData.News} /> */}
+         {/* <Header data={landingPageData.Header} /> */}
+         {/* <Slider data={landingPageData.Slider} /> */}
+      </div>
+   );
 };
 
 export default App;
