@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
+import React, { useState, useEffect } from "react";import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Intro } from "./components/intro";
 // import { Features } from "./components/features";
@@ -36,10 +35,10 @@ const App = () => {
          <Navigation />
          <Intro data={landingPageData.Intro} />
          <About data={landingPageData.About} />
+         <Video data={landingPageData.Video} />
          <Actions data={landingPageData.Actions} />
          <Footer data={landingPageData.Footer} />
          {/* <Services data={landingPageData.Services} /> */}
-         {/* <Video data={landingPageData.Video} /> */}
          {/* <Statistics data={landingPageData.Statistics} /> */}
          {/* <Careers data={landingPageData.Careers} /> */}
          {/* <News data={landingPageData.News} /> */}

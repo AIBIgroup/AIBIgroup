@@ -817,30 +817,156 @@ label {
    color: #608dfd;
    background: #fff;
 }
-/* Footer Section*/
-.footer {
-   background-color: #075b9b;
-   padding: 30px 0;
+
+.contact-info {
+   background-color: #FFF;
+   padding: 20px;
+   text-align: left;
+   font-family: "Manrope", sans-serif;
+   margin-top: 90px; 
+   margin-left: 50px;
 }
-.footer p {
-   color: #ffffff;
+
+.contact-address,
+.contact-hours {
+   color: #a0a0a0;
    font-size: 16px;
+   font-weight: Regular;
+   margin: 0;
+   margin-left: 120px;
+   font-family: "Manrope", sans-serif;
 }
-.footer a {
-   color: #ffffff;
-   font-size: 24px;
+
+.contact-address-large {
+   color: #000000;
+   font-size: 34px;
+   font-weight: Regular;
+   margin: 10px 0 0 0;
+   margin-left: 120px;
+   font-family: "Manrope", sans-serif;
 }
-.footer-navigation {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   text-align: right;
-   justify-content: space-around;
-   height: 200px;
+
+.phone-info {
+   background-color: #FFF;
+   padding: 20px;
+   text-align: center;
+   font-family: "Manrope", sans-serif;
+   margin-top: -120px; 
 }
-.footer a:hover {
-   border-bottom: 2px solid #608dfd;
+
+.phone-label {
+   color: #a0a0a0;
+   font-size: 16px;
+   font-weight: Regular;
+   
+   margin: 0;
 }
+
+.phone-number {
+   color: #000000;
+   font-size: 34px;
+   font-weight: Regular;
+   margin: 10px 0 0 0;
+}
+
+.email-info {
+   background-color: #FFF;
+   padding: 20px;
+   text-align: right; 
+   font-family: "Manrope", sans-serif;
+   margin-top: -120px; 
+   margin-right: 50px;
+}
+
+.email-label {
+   color: #a0a0a0;
+   font-size: 16px;
+   font-weight: Regular;
+   margin: 0;
+   margin-right: 180px;
+}
+
+.email-address {
+   color: #000000;
+   font-size: 34px;
+   font-weight: Regular;
+   margin: 10px 0 0 0;
+   margin-right: 120px; 
+}
+
+.footer {
+   background-color: #fff;
+   padding: 30px;
+   font-family: "Manrope", sans-serif;
+   text-align: center;
+}
+
+.footer p {
+   color: #a0a0a0;
+   font-size: 16px;
+   margin: 0;
+   font-weight: Regular;
+}
+
+.map-container {
+   margin-top: -20px;
+   height: 450px; 
+   overflow: hidden;
+   width: 100%; 
+}
+
+@media (max-width: 768px) {
+   .contact-info {
+      margin-left: 20px;
+      padding: 10px;
+      text-align: center;
+   }
+
+   .contact-address,
+   .contact-hours,
+   .contact-address-large {
+      margin-left: 0;
+      font-size: 14px;
+   }
+
+   .contact-address-large {
+      font-size: 24px;
+   }
+
+   .phone-info,
+   .email-info {
+      margin-top: 0;
+      margin-right: 0;
+      padding: 10px;
+   }
+
+   .phone-label,
+   .email-label {
+      font-size: 14px;
+   }
+
+   .phone-number,
+   .email-address {
+      font-size: 24px;
+   }
+
+   .email-info {
+      text-align: center;
+   }
+
+   .email-address {
+      margin-right: 0;
+   }
+
+   .map-container {
+      height: 300px;
+   }
+
+   .footer p {
+      font-size: 14px;
+   }
+}
+
 
 @media (max-width: 768px) {
    #about img {
@@ -848,247 +974,7 @@ label {
    }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-body {
-   margin: 0;
-   font-family: "Manrope", sans-serif;
-}
-
-#about {
-   width: 100%;
-   padding: 0 20px;
-   box-sizing: border-box;
-}
-
-.columns-wrapper {
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-   box-sizing: border-box;
-   flex-wrap: wrap;
-}
-
-.left-column {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: calc(50% - 30px);
-   margin-left: 20px;
-}
-
-.about-text {
-   margin-bottom: 20px;
-}
-
-.features-wrapper {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 100%;
-   margin: 20px 0;
-}
-
-.features-blocks {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 20px;
-   width: 100%;
-}
-
-.features-block,
-.additional-block {
-   position: relative;
-   background-color: #f0f0f0;
-   border-radius: 30px;
-   color: #a0a0a0;
-   font-family: "Manrope", sans-serif;
-   padding: 20px;
-   box-sizing: border-box;
-   margin-bottom: 20px;
-   display: flex;
-   align-items: center;
-   height: 220px;
-   transition: 0.3s;
-   transform: 0.3s;
-}
-
-.features-block:hover,
-.additional-block:hover {
-   background-color: #ddac17;
-   transform: scale(1.07);
-   color: #ffffff;
-}
-
-.text-left {
-   text-align: left;
-   color: rgba(32, 32, 32, 1);
-   padding-top: 18%;
-}
-
-.features-block {
-   width: calc(50% - 10px);
-}
-
-.additional-block {
-   width: 100%;
-   margin-top: 20px;
-}
-
-.features-block::before,
-.additional-block::before {
-   content: attr(data-number);
-   position: absolute;
-   top: 10px;
-   left: 10px;
-   font-size: 20px;
-   font-weight: bold;
-   color: #a0a0a0;
-   background-color: #ffffff;
-   border-radius: 50%;
-   width: 40px;
-   height: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.features-block:hover::before,
-.additional-block:hover::before {
-   color: #ffffff;
-   background-color: #ddac17;
-}
-
-.benefit-calculator {
-   position: absolute;
-   top: 20px;
-   left: 20px;
-   color: #a0a0a0;
-   font-weight: regular;
-   font-size: 30px;
-}
-
-.calculator-description {
-   margin-top: 20px;
-   color: #a0a0a0;
-   font-weight: regular;
-   font-size: 13px;
-}
-
-.textarea-container {
-   position: relative;
-}
-
-.input-field {
-   width: 450px;
-   height: 40px;
-   margin: 130px 20px 18px 20px;
-   padding: 10px 40px 10px 5px;
-   border-radius: 15px;
-   border: 1px solid #c0c0c0;
-   box-sizing: border-box;
-   font-family: "Manrope", sans-serif;
-   font-size: 14px;
-   color: #a0a0a0;
-   resize: none;
-   overflow: hidden;
-}
-
-.image-button {
-   position: absolute;
-   top: 80%;
-   right: 40px;
-   transform: translateY(-50%);
-   background: transparent;
-   border: none;
-   padding: 0;
-   cursor: pointer;
-}
-
-.image-button img {
-   display: block;
-   width: 30px;
-   height: 30px;
-}
-
-.textarea-label {
-   position: absolute;
-   left: 20px;
-   top: 100%;
-   font-size: 24px;
-   font-family: "Manrope", sans-serif;
-   color: #a0a0a0;
-   margin-top: 60px;
-}
-
-.right-column {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: calc(50% - 30px);
-   margin-right: 20px;
-}
-.benefit-calculator {
-   font-family: "Manrope", sans-serif;
-}
-.calculator-description {
-   font-family: "Manrope", sans-serif;
-}
-.big-block {
-   width: 100%;
-   max-width: 500px;
-   height: 690px;
-   background-color: #f0f0f0;
-   border-radius: 30px;
-   margin-top: 90px;
-   position: relative;
-}
-
-@media (max-width: 767px) {
-   .columns-wrapper {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .left-column,
-   .right-column {
-      width: 100%;
-      margin: 0;
-      box-sizing: border-box;
-   }
-
-   .left-column {
-      margin-left: 0;
-      margin-bottom: 20px;
-   }
-
-   .right-column {
-      margin-right: 0;
-   }
-
-   .features-wrapper {
-      margin: 10px 0;
-   }
-
-   .features-blocks {
-      gap: 10px;
-   }
-
-   .features-block,
-   .additional-block {
-      width: 100%;
-      height: auto;
-      text-align: left;
-      margin-bottom: 10px;
-   }
-
-   .big-block {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 20px;
-   }
-}
 
 #intro {
    padding-top: 2%;
@@ -1257,6 +1143,7 @@ body {
    flex-direction: column;
    justify-content: space-around;
    height: 60%;
+   width: 300px;
 }
 .social-media a {
    font-size: 16px;
@@ -1280,4 +1167,398 @@ body {
       /* Purple */ rgb(255, 196, 0) /* Yellow */
    );
    color: rgba(252, 252, 252, 1);
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+#about {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  width: 45%;
+  margin-right: 0;
+  position: relative; 
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.features-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.features-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.features-block,
+.additional-block {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  color: #a0a0a0;
+  font-family: "Manrope", sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 210px;
+  transition: 0.3s;
+  transform: 0.3s;
+  
+}
+
+.features-block:hover,
+.additional-block:hover {
+  background-color: #ddac17;
+  transform: scale(1.07);
+  color: #ffffff;
+}
+
+.text-left {
+  text-align: left;
+  color: rgba(32, 32, 32, 1);
+  padding-top: 18%;
+}
+
+.features-block {
+  width: calc(50% - 10px);
+}
+
+.additional-block {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.features-block::before,
+.additional-block::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a0a0a0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-block:hover::before,
+.additional-block:hover::before {
+  color: #ffffff;
+  background-color: #ddac17;
+}
+
+.benefit-calculator {
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  top: 30px;
+  left: 40px;
+  color: #000000;
+  font-weight: regular;
+  font-size: 30px;
+  white-space: nowrap; 
+}
+
+.calculator-description {
+  margin-top: 20px;
+  color: #a0a0a0;
+  font-weight: regular;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+
+}
+
+.textarea-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  margin: 130px 20px 18px 20px;
+}
+
+.input-field {
+  width: 100%;
+  height: 40px;
+  padding: 10px 40px 10px 5px;
+  border-radius: 15px;
+  border: 1px solid #c0c0c0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  resize: none;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.image-button {
+  position: absolute;
+  top: 3%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: -10px;
+}
+
+.image-button img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.big-block {
+  width: 100%;
+  max-width: 100%;
+  height: 700px;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 140px;
+  position: relative;
+  margin-left: -10px;
+}
+
+.output-container,
+.output2-container,
+.profit-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  min-height: 40px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.output-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.output-label,
+.output2-label,
+.profit-label {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.textarea-label {
+   position: absolute;
+   left: 20px;
+   top: 100%;
+   font-size: 20px;
+   font-family: "Manrope", sans-serif;
+   margin-left: -20px;
+   margin-top: -430px;
+   color: #000000;
+}
+
+.Money1 {
+   position: absolute;
+   top: 80%;
+   left: 20px;
+   font-size: 20px;
+   font-family: "Manrope", sans-serif;
+   color: #000000;
+   margin-top: -210px;
+   margin-left: -20px;
+}
+
+.Money2 {
+   position: absolute;
+   top: 80%;
+   left: 20px;
+   font-size: 20px;
+   font-family: "Manrope", sans-serif;
+   color: #000000;
+   margin-top: -90px;
+   margin-left: -20px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 20px; 
+  left: 20px;
+  font-size: 14px;
+  color: #a0a0a0;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  width: calc(100% - 40px); 
+  margin-top:-20px;
+}
+
+
+@media (max-width: 768px) {
+  .columns-wrapper {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-column {
+    margin-bottom: 20px;
+  }
+
+  .right-column {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .features-block,
+  .additional-block {
+    width: 100%;
+    height: auto; 
+  }
+
+  .features-blocks {
+    flex-direction: column;
+  }
+
+  .features-block {
+    width: 100%;
+  }
+
+  .additional-block {
+    margin-top: 20px;
+  }
+
+  .textarea-container {
+    margin: 10px 0;
+    max-width: 100%;
+    overflow: hidden; 
+  }
+
+  .input-field {
+    height: 35px;
+    padding: 8px 30px 8px 5px;
+    font-size: 12px;
+  }
+
+  .image-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .big-block {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .output-container,
+  .output2-container,
+  .profit-container {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .output-container{
+   margin-top: 0px;;
+  }
+  .output-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .output-label,
+  .output2-label,
+  .profit-label {
+    font-size: 12px;
+  }
+
+  .textarea-label,
+  .Money1,
+  .Money2 {
+    font-size: 16px;
+  }
+
+  .benefit-calculator {
+    position: static;
+    top: auto;
+    left: auto;
+    font-size: 24px;
+  }
+
+  .footer-text {
+    position: static;
+    font-size: 12px; 
+    text-align: center;
+  }
 }

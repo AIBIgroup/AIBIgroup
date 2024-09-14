@@ -15,11 +15,11 @@ import React from "react";export const Actions = () => {
                </div>
                <div className="social-media">
                   <a id="wa" href="#">
-                     <img src={`${process.env.PUBLIC_URL}/img/.png`} alt="" />
+                     <img src={`${process.env.PUBLIC_URL}/img/icon4.png`} alt="" />
                      написать на WhatsApp
                   </a>
                   <a id="insta" href="#">
-                     <img src={`${process.env.PUBLIC_URL}/img/.png`} alt="" />
+                     <img src={`${process.env.PUBLIC_URL}/img/icon5.png`} alt="" />
                      написать на Instagram
                   </a>
                </div>
