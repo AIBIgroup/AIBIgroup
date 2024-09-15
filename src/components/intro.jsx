@@ -25,6 +25,7 @@ export const Intro = () => {
                         <p>
                            <img
                               src={`${process.env.PUBLIC_URL}/img/pointer.png`}
+                              alt="pointer"
                            />
                            Ул. Сыганак 47
                         </p>
@@ -33,6 +34,7 @@ export const Intro = () => {
                         <p>
                            <img
                               src={`${process.env.PUBLIC_URL}/img/phone.png`}
+                              alt="phone"
                            />
                            +7 (778) 257 68 75
                         </p>
@@ -41,6 +43,7 @@ export const Intro = () => {
                         <p>
                            <img
                               src={`${process.env.PUBLIC_URL}/img/email.png`}
+                              alt="email"
                            />
                            example@gmail.com
                         </p>
@@ -52,61 +55,72 @@ export const Intro = () => {
                      <h1>Свяжитесь с нами</h1>
                   </div>
                   <div className="form">
-                     <TextField
-                        id="filled-basic"
-                        label="Имя"
-                        variant="filled"
-                        sx={{
-                           "& .MuiInputBase-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                           "& .MuiInputLabel-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                        }}
-                     />
-                     <TextField
-                        id="filled-basic"
-                        label="Фамилия"
-                        variant="filled"
-                        sx={{
-                           "& .MuiInputBase-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                           "& .MuiInputLabel-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                        }}
-                     />
-                     <TextField
-                        id="filled-basic"
-                        label="Номер"
-                        variant="filled"
-                        sx={{
-                           "& .MuiInputBase-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                           "& .MuiInputLabel-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                        }}
-                     />
-                     <TextField
-                        id="filled-basic"
-                        label="Комментарии"
-                        variant="filled"
-                        sx={{
-                           "& .MuiInputBase-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                           "& .MuiInputLabel-root": {
-                              fontFamily: `"Manrope", sans-serif`,
-                           },
-                        }}
-                     />
-                     <Button variant="contained">Отправить</Button>
+                     {/* Добавляем тег <form> с атрибутом data-netlify для работы с Netlify Forms */}
+                     <form name="contact" method="POST" data-netlify="true">
+                        {/* Это скрытое поле нужно для Netlify */}
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <TextField
+                           id="filled-basic"
+                           label="Имя"
+                           name="name"
+                           variant="filled"
+                           sx={{
+                              "& .MuiInputBase-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                              "& .MuiInputLabel-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                           }}
+                        />
+                        <TextField
+                           id="filled-basic"
+                           label="Фамилия"
+                           name="lastname"
+                           variant="filled"
+                           sx={{
+                              "& .MuiInputBase-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                              "& .MuiInputLabel-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                           }}
+                        />
+                        <TextField
+                           id="filled-basic"
+                           label="Номер"
+                           name="phone"
+                           variant="filled"
+                           sx={{
+                              "& .MuiInputBase-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                              "& .MuiInputLabel-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                           }}
+                        />
+                        <TextField
+                           id="filled-basic"
+                           label="Комментарии"
+                           name="comments"
+                           variant="filled"
+                           sx={{
+                              "& .MuiInputBase-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                              "& .MuiInputLabel-root": {
+                                 fontFamily: `"Manrope", sans-serif`,
+                              },
+                           }}
+                        />
+                        <Button type="submit" variant="contained">
+                           Отправить
+                        </Button>
+                     </form>
                   </div>
-                  {/* </div> */}
                </div>
             </div>
          </div>
