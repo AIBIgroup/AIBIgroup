@@ -1,7 +1,6 @@
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
    <link
@@ -14,7 +13,6 @@
       sizes="114x114"
       href="img/apple-touch-icon-114x114.png"
    />
-
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
    <link
       rel="stylesheet"
@@ -45,7 +43,6 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
       rel="stylesheet"
    />
-
    <link
       rel="stylesheet"
       href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
@@ -54,7 +51,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
    />
-
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link
@@ -72,6 +68,16 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
    <div id="root"></div>
+
+   <!-- Скрытая HTML-форма для Netlify -->
+   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="text" name="lastname" />
+      <input type="text" name="phone" />
+      <textarea name="comments"></textarea>
+   </form>
+
    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
    <script type="text/javascript" src="js/bootstrap.js"></script>
    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>

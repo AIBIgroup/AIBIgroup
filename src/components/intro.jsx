@@ -55,7 +55,7 @@ export const Intro = () => {
                   </div>
                   <div className="form">
                      <form name="contact" method="POST" data-netlify="true">
-                        {/* Это скрытое поле нужно для Netlify */}
+                        {/* Скрытое поле для Netlify */}
                         <input type="hidden" name="form-name" value="contact" />
 
                         {/* Honeypot скрытое поле */}
@@ -63,7 +63,6 @@ export const Intro = () => {
                            <input name="bot-field" />
                         </div>
 
-                        {/* Замена TextField на стандартные input */}
                         <div>
                            <label htmlFor="name">Имя:</label>
                            <input type="text" id="name" name="name" />
