@@ -1,5 +1,4 @@
 import React from "react";
-import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 export const Intro = () => {
@@ -64,62 +63,24 @@ export const Intro = () => {
                            <input name="bot-field" />
                         </div>
 
-                        <TextField
-                           id="filled-basic"
-                           label="Имя"
-                           name="name"
-                           variant="filled"
-                           sx={{
-                              "& .MuiInputBase-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                              "& .MuiInputLabel-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                           }}
-                        />
-                        <TextField
-                           id="filled-basic"
-                           label="Фамилия"
-                           name="lastname"
-                           variant="filled"
-                           sx={{
-                              "& .MuiInputBase-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                              "& .MuiInputLabel-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                           }}
-                        />
-                        <TextField
-                           id="filled-basic"
-                           label="Номер"
-                           name="phone"
-                           variant="filled"
-                           sx={{
-                              "& .MuiInputBase-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                              "& .MuiInputLabel-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                           }}
-                        />
-                        <TextField
-                           id="filled-basic"
-                           label="Комментарии"
-                           name="comments"
-                           variant="filled"
-                           sx={{
-                              "& .MuiInputBase-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                              "& .MuiInputLabel-root": {
-                                 fontFamily: `"Manrope", sans-serif`,
-                              },
-                           }}
-                        />
+                        {/* Замена TextField на стандартные input */}
+                        <div>
+                           <label htmlFor="name">Имя:</label>
+                           <input type="text" id="name" name="name" />
+                        </div>
+                        <div>
+                           <label htmlFor="lastname">Фамилия:</label>
+                           <input type="text" id="lastname" name="lastname" />
+                        </div>
+                        <div>
+                           <label htmlFor="phone">Номер:</label>
+                           <input type="tel" id="phone" name="phone" />
+                        </div>
+                        <div>
+                           <label htmlFor="comments">Комментарии:</label>
+                           <textarea id="comments" name="comments"></textarea>
+                        </div>
+
                         <Button type="submit" variant="contained">
                            Отправить
                         </Button>
