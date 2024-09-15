@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <nav
       id="menu"
@@ -22,7 +22,11 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="img/logo1.png" width="80%" style={{ marginTop: "-10px" }} />
+            <img
+              src="img/logo1.png"
+              width="80%"
+              style={{ marginTop: "-10px" }}
+            />
           </a>{" "}
         </div>
 
@@ -32,23 +36,38 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#intro" className="page-scroll" style={{ color: "#000000" }}>
+              <a
+                href="#intro"
+                className="page-scroll"
+                style={{ color: "#000000" }}
+              >
                 Главная
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll" style={{ color: "#000000" }}>
+              <a
+                href="#about"
+                className="page-scroll"
+                style={{ color: "#000000" }}
+              >
                 Предложения
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll" style={{ color: "#000000" }}>
+              <a
+                href="#services"
+                className="page-scroll"
+                style={{ color: "#000000" }}
+              >
                 О нас
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll" style={{ color: "#0000" }}>
-
+              <a
+                href="#portfolio"
+                className="page-scroll"
+                style={{ color: "#0000" }}
+              >
               </a>
             </li>
           </ul>
