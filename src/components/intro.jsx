@@ -55,14 +55,17 @@ export const Intro = () => {
                      <h1>Свяжитесь с нами</h1>
                   </div>
                   <div className="form">
-                     {/* Форма с атрибутом data-netlify для Netlify Forms */}
-                     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        {/* Скрытое поле для Netlify */}
+                     <form name="contact" method="POST" data-netlify="true">
+                        {/* Это скрытое поле нужно для Netlify */}
                         <input type="hidden" name="form-name" value="contact" />
-                        <input type="hidden" name="bot-field" />
+
+                        {/* Honeypot скрытое поле */}
+                        <div style={{ display: "none" }}>
+                           <input name="bot-field" />
+                        </div>
 
                         <TextField
-                           id="name"
+                           id="filled-basic"
                            label="Имя"
                            name="name"
                            variant="filled"
@@ -76,7 +79,7 @@ export const Intro = () => {
                            }}
                         />
                         <TextField
-                           id="lastname"
+                           id="filled-basic"
                            label="Фамилия"
                            name="lastname"
                            variant="filled"
@@ -90,7 +93,7 @@ export const Intro = () => {
                            }}
                         />
                         <TextField
-                           id="phone"
+                           id="filled-basic"
                            label="Номер"
                            name="phone"
                            variant="filled"
@@ -104,7 +107,7 @@ export const Intro = () => {
                            }}
                         />
                         <TextField
-                           id="comments"
+                           id="filled-basic"
                            label="Комментарии"
                            name="comments"
                            variant="filled"
