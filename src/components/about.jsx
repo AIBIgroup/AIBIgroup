@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types'; // Импортируем PropTypes
 
 // Функция для форматирования чисел с разделением тысяч
 const formatNumber = (num) => {
@@ -111,7 +112,6 @@ export const About = (props) => {
                     <div className="profit-label">{benefit}</div>
                   </div>
                 </div>
-                {/* Добавляем новый элемент для текста */}
                 <div className="footer-text">
                   Все права на публикуемые на сайте материалы принадлежат компании ABI Group © 2024
                 </div>
@@ -122,4 +122,11 @@ export const About = (props) => {
       </div>
     </div>
   );
+};
+
+// Добавляем валидацию пропсов
+About.propTypes = {
+  data: PropTypes.shape({
+    paragraph: PropTypes.string.isRequired,
+  }),
 };
