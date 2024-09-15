@@ -1,4 +1,5 @@
-import React from "react";import TextField from "@mui/material/TextField";
+import React from "react";
+import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 export const Intro = () => {
@@ -41,7 +42,7 @@ export const Intro = () => {
                            <img
                               src={`${process.env.PUBLIC_URL}/img/email.png`}
                            />
-                           example@.com
+                           example@gmail.com
                         </p>
                      </div>
                   </div>
