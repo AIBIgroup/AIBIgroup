@@ -1,5 +1,4 @@
-body,
-html {
+body,html {
    font-family: Arial, Helvetica, sans-serif;
    text-rendering: optimizeLegibility !important;
    -webkit-font-smoothing: antialiased !important;
@@ -819,11 +818,11 @@ label {
 }
 
 .contact-info {
-   background-color: #FFF;
+   background-color: #fff;
    padding: 20px;
    text-align: left;
    font-family: "Manrope", sans-serif;
-   margin-top: 90px; 
+   margin-top: 90px;
    margin-left: 50px;
 }
 
@@ -847,18 +846,18 @@ label {
 }
 
 .phone-info {
-   background-color: #FFF;
+   background-color: #fff;
    padding: 20px;
    text-align: center;
    font-family: "Manrope", sans-serif;
-   margin-top: -120px; 
+   margin-top: -120px;
 }
 
 .phone-label {
    color: #a0a0a0;
    font-size: 16px;
    font-weight: Regular;
-   
+
    margin: 0;
 }
 
@@ -870,11 +869,11 @@ label {
 }
 
 .email-info {
-   background-color: #FFF;
+   background-color: #fff;
    padding: 20px;
-   text-align: right; 
+   text-align: right;
    font-family: "Manrope", sans-serif;
-   margin-top: -120px; 
+   margin-top: -120px;
    margin-right: 50px;
 }
 
@@ -891,7 +890,7 @@ label {
    font-size: 34px;
    font-weight: Regular;
    margin: 10px 0 0 0;
-   margin-right: 120px; 
+   margin-right: 120px;
 }
 
 .footer {
@@ -910,9 +909,9 @@ label {
 
 .map-container {
    margin-top: -20px;
-   height: 450px; 
+   height: 450px;
    overflow: hidden;
-   width: 100%; 
+   width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -967,14 +966,11 @@ label {
    }
 }
 
-
 @media (max-width: 768px) {
    #about img {
       margin: 50px 0;
    }
 }
-
-
 
 #intro {
    padding-top: 2%;
@@ -1048,8 +1044,9 @@ label {
    position: relative;
    height: 70%;
    justify-content: space-between;
+   text-align: center;
 }
-.form .MuiFilledInput-root {
+/* .form .MuiFilledInput-root {
    background-color: rgba(252, 252, 252, 1);
    height: 45px;
    border-radius: 20px;
@@ -1076,7 +1073,6 @@ label {
 
 .form .MuiInputLabel-root.Mui-focused {
    color: rgba(32, 32, 32, 1);
-   /* color: rgba(221, 172, 23, 1); */
 }
 
 .form .MuiInputBase-input {
@@ -1097,13 +1093,37 @@ label {
    margin: 0;
 }
 .form .MuiButton-contained {
-   background-color: rgba(32, 32, 32, 1); /* Background color */
-   font-family: "Manrope", sans-serif; /* Font family */
-   font-size: 12px; /* Font size */
-   height: 40px; /* Height of the button */
-   padding: 0 16px; /* Adjust padding for the button */
+   background-color: rgba(32, 32, 32, 1); 
+   font-family: "Manrope", sans-serif; 
+   font-size: 12px; 
+   height: 40px; 
+   padding: 0 16px; 
    border-radius: 20px;
    margin-top: 5%;
+} */
+.intro-input {
+   width: 100%;
+}
+.intro-input label {
+}
+.intro-input input,
+.intro-input textarea {
+   width: 100%;
+   font-family: "Manrope", sans-serif;
+   padding: 10px;
+   border-radius: 15px;
+   border: none;
+   color: rgba(32, 32, 32, 1);
+}
+.submit {
+   width: 100%;
+   margin: 0 auto;
+   color: rgba(252, 252, 252, 1);
+   background-color: rgba(32, 32, 32, 1);
+   padding: 12px;
+   border-radius: 15px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
 }
 
 #actions {
@@ -1169,242 +1189,235 @@ label {
    color: rgba(252, 252, 252, 1);
 }
 
-
-
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 body {
-  margin: 0;
-  font-family: "Manrope", sans-serif;
+   margin: 0;
+   font-family: "Manrope", sans-serif;
 }
 
 #about {
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
+   width: 100%;
+   padding: 0 20px;
+   box-sizing: border-box;
 }
 
 .columns-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   box-sizing: border-box;
+   flex-wrap: wrap;
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
-  margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 50%;
+   margin-left: 20px;
 }
 
 .right-column {
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start;
-  width: 45%;
-  margin-right: 0;
-  position: relative; 
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 45%;
+   margin-right: 0;
+   position: relative;
 }
 
 .about-text {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .features-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  margin: 20px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   margin: 20px 0;
 }
 
 .features-blocks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100%;
 }
 
 .features-block,
 .additional-block {
-  position: relative;
-  background-color: #f0f0f0;
-  border-radius: 30px;
-  color: #a0a0a0;
-  font-family: "Manrope", sans-serif;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  height: 210px;
-  transition: 0.3s;
-  transform: 0.3s;
-  
+   position: relative;
+   background-color: #f0f0f0;
+   border-radius: 30px;
+   color: #a0a0a0;
+   font-family: "Manrope", sans-serif;
+   padding: 20px;
+   box-sizing: border-box;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   height: 210px;
+   transition: 0.3s;
+   transform: 0.3s;
 }
 
 .features-block:hover,
 .additional-block:hover {
-  background-color: #ddac17;
-  transform: scale(1.07);
-  color: #ffffff;
+   background-color: #ddac17;
+   transform: scale(1.07);
+   color: #ffffff;
 }
 
 .text-left {
-  text-align: left;
-  color: rgba(32, 32, 32, 1);
-  padding-top: 18%;
+   text-align: left;
+   color: rgba(32, 32, 32, 1);
+   padding-top: 18%;
 }
 
 .features-block {
-  width: calc(50% - 10px);
+   width: calc(50% - 10px);
 }
 
 .additional-block {
-  width: 100%;
-  margin-top: 20px;
+   width: 100%;
+   margin-top: 20px;
 }
 
 .features-block::before,
 .additional-block::before {
-  content: attr(data-number);
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #a0a0a0;
-  background-color: #ffffff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   content: attr(data-number);
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #a0a0a0;
+   background-color: #ffffff;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .features-block:hover::before,
 .additional-block:hover::before {
-  color: #ffffff;
-  background-color: #ddac17;
+   color: #ffffff;
+   background-color: #ddac17;
 }
 
 .benefit-calculator {
-  position: absolute;
-  font-family: "Manrope", sans-serif;
-  top: 30px;
-  left: 40px;
-  color: #000000;
-  font-weight: regular;
-  font-size: 30px;
-  white-space: nowrap; 
+   position: absolute;
+   font-family: "Manrope", sans-serif;
+   top: 30px;
+   left: 40px;
+   color: #000000;
+   font-weight: regular;
+   font-size: 30px;
+   white-space: nowrap;
 }
 
 .calculator-description {
-  margin-top: 20px;
-  color: #a0a0a0;
-  font-weight: regular;
-  font-size: 13px;
-  font-family: "Manrope", sans-serif;
-
+   margin-top: 20px;
+   color: #a0a0a0;
+   font-weight: regular;
+   font-size: 13px;
+   font-family: "Manrope", sans-serif;
 }
 
 .textarea-container {
-  position: relative;
-  width: 100%;
-  max-width: 450px;
-  height: 100%;
-  margin: 130px 20px 18px 20px;
+   position: relative;
+   width: 100%;
+   max-width: 450px;
+   height: 100%;
+   margin: 130px 20px 18px 20px;
 }
 
 .input-field {
-  width: 100%;
-  height: 40px;
-  padding: 10px 40px 10px 5px;
-  border-radius: 15px;
-  border: 1px solid #c0c0c0;
-  box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  color: #a0a0a0;
-  resize: none;
-  overflow: hidden;
-  margin-top: -5px;
+   width: 100%;
+   height: 40px;
+   padding: 10px 40px 10px 5px;
+   border-radius: 15px;
+   border: 1px solid #c0c0c0;
+   box-sizing: border-box;
+   font-family: "Manrope", sans-serif;
+   font-size: 14px;
+   color: #a0a0a0;
+   resize: none;
+   overflow: hidden;
+   margin-top: -5px;
 }
 
 .image-button {
-  position: absolute;
-  top: 3%;
-  right: 20px;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  margin-right: -10px;
+   position: absolute;
+   top: 3%;
+   right: 20px;
+   transform: translateY(-50%);
+   background: transparent;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+   margin-right: -10px;
 }
 
 .image-button img {
-  display: block;
-  width: 30px;
-  height: 30px;
+   display: block;
+   width: 30px;
+   height: 30px;
 }
 
 .big-block {
-  width: 100%;
-  max-width: 100%;
-  height: 700px;
-  background-color: #f0f0f0;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: 140px;
-  position: relative;
-  margin-left: -10px;
+   width: 100%;
+   max-width: 100%;
+   height: 700px;
+   background-color: #f0f0f0;
+   border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   box-sizing: border-box;
+   margin-top: 140px;
+   position: relative;
+   margin-left: -10px;
 }
 
 .output-container,
 .output2-container,
 .profit-container {
-  width: 100%;
-  max-width: 450px;
-  padding: 5px;
-  border: 1px solid #c0c0c0;
-  border-radius: 15px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 40px;
-  min-height: 40px;
-  margin-top: 80px;
-  position: relative;
+   width: 100%;
+   max-width: 450px;
+   padding: 5px;
+   border: 1px solid #c0c0c0;
+   border-radius: 15px;
+   background-color: #ffffff;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 40px;
+   min-height: 40px;
+   margin-top: 80px;
+   position: relative;
 }
 
 .output-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
+   width: 20px;
+   height: 20px;
+   margin: 0 10px;
 }
 
 .output-label,
 .output2-label,
 .profit-label {
-  font-size: 14px;
-  color: #a0a0a0;
-  font-family: "Manrope", sans-serif;
-  display: flex;
-  align-items: center;
+   font-size: 14px;
+   color: #a0a0a0;
+   font-family: "Manrope", sans-serif;
+   display: flex;
+   align-items: center;
 }
 
 .textarea-label {
@@ -1441,124 +1454,123 @@ body {
 }
 
 .footer-text {
-  position: absolute;
-  bottom: 20px; 
-  left: 20px;
-  font-size: 14px;
-  color: #a0a0a0;
-  font-family: "Manrope", sans-serif;
-  text-align: center;
-  width: calc(100% - 40px); 
-  margin-top:-20px;
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   font-size: 14px;
+   color: #a0a0a0;
+   font-family: "Manrope", sans-serif;
+   text-align: center;
+   width: calc(100% - 40px);
+   margin-top: -20px;
 }
 
-
 @media (max-width: 768px) {
-  .columns-wrapper {
-    flex-direction: column;
-  }
+   .columns-wrapper {
+      flex-direction: column;
+   }
 
-  .left-column,
-  .right-column {
-    width: 100%;
-    margin: 0;
-  }
+   .left-column,
+   .right-column {
+      width: 100%;
+      margin: 0;
+   }
 
-  .left-column {
-    margin-bottom: 20px;
-  }
+   .left-column {
+      margin-bottom: 20px;
+   }
 
-  .right-column {
-    position: static;
-    margin-top: 20px;
-  }
+   .right-column {
+      position: static;
+      margin-top: 20px;
+   }
 
-  .about-text h2 {
-    font-size: 24px;
-  }
+   .about-text h2 {
+      font-size: 24px;
+   }
 
-  .about-text p {
-    font-size: 14px;
-  }
+   .about-text p {
+      font-size: 14px;
+   }
 
-  .features-block,
-  .additional-block {
-    width: 100%;
-    height: auto; 
-  }
+   .features-block,
+   .additional-block {
+      width: 100%;
+      height: auto;
+   }
 
-  .features-blocks {
-    flex-direction: column;
-  }
+   .features-blocks {
+      flex-direction: column;
+   }
 
-  .features-block {
-    width: 100%;
-  }
+   .features-block {
+      width: 100%;
+   }
 
-  .additional-block {
-    margin-top: 20px;
-  }
+   .additional-block {
+      margin-top: 20px;
+   }
 
-  .textarea-container {
-    margin: 10px 0;
-    max-width: 100%;
-    overflow: hidden; 
-  }
+   .textarea-container {
+      margin: 10px 0;
+      max-width: 100%;
+      overflow: hidden;
+   }
 
-  .input-field {
-    height: 35px;
-    padding: 8px 30px 8px 5px;
-    font-size: 12px;
-  }
+   .input-field {
+      height: 35px;
+      padding: 8px 30px 8px 5px;
+      font-size: 12px;
+   }
 
-  .image-button img {
-    width: 25px;
-    height: 25px;
-  }
+   .image-button img {
+      width: 25px;
+      height: 25px;
+   }
 
-  .big-block {
-    height: auto;
-    margin-top: 20px;
-  }
+   .big-block {
+      height: auto;
+      margin-top: 20px;
+   }
 
-  .output-container,
-  .output2-container,
-  .profit-container {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    padding: 10px;
-  }
-  .output-container{
-   margin-top: 0px;;
-  }
-  .output-icon {
-    width: 15px;
-    height: 15px;
-  }
+   .output-container,
+   .output2-container,
+   .profit-container {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px;
+   }
+   .output-container {
+      margin-top: 0px;
+   }
+   .output-icon {
+      width: 15px;
+      height: 15px;
+   }
 
-  .output-label,
-  .output2-label,
-  .profit-label {
-    font-size: 12px;
-  }
+   .output-label,
+   .output2-label,
+   .profit-label {
+      font-size: 12px;
+   }
 
-  .textarea-label,
-  .Money1,
-  .Money2 {
-    font-size: 16px;
-  }
+   .textarea-label,
+   .Money1,
+   .Money2 {
+      font-size: 16px;
+   }
 
-  .benefit-calculator {
-    position: static;
-    top: auto;
-    left: auto;
-    font-size: 24px;
-  }
+   .benefit-calculator {
+      position: static;
+      top: auto;
+      left: auto;
+      font-size: 24px;
+   }
 
-  .footer-text {
-    position: static;
-    font-size: 12px; 
-    text-align: center;
-  }
+   .footer-text {
+      position: static;
+      font-size: 12px;
+      text-align: center;
+   }
 }
