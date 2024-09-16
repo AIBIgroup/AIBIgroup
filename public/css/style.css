@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
    font-family: Arial, Helvetica, sans-serif;
    text-rendering: optimizeLegibility !important;
    -webkit-font-smoothing: antialiased !important;
@@ -857,7 +858,7 @@ label {
    color: #a0a0a0;
    font-size: 16px;
    font-weight: Regular;
-
+   font-family: "Manrope", sans-serif;
    margin: 0;
 }
 
@@ -866,6 +867,7 @@ label {
    font-size: 34px;
    font-weight: Regular;
    margin: 10px 0 0 0;
+   font-family: "Manrope", sans-serif;
 }
 
 .email-info {
@@ -883,6 +885,7 @@ label {
    font-weight: Regular;
    margin: 0;
    margin-right: 180px;
+   font-family: "Manrope", sans-serif;
 }
 
 .email-address {
@@ -891,6 +894,7 @@ label {
    font-weight: Regular;
    margin: 10px 0 0 0;
    margin-right: 120px;
+   font-family: "Manrope", sans-serif;
 }
 
 .footer {
@@ -905,6 +909,7 @@ label {
    font-size: 16px;
    margin: 0;
    font-weight: Regular;
+   font-family: "Manrope", sans-serif;
 }
 
 .map-container {
