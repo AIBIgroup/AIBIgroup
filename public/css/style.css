@@ -1163,7 +1163,7 @@ label {
    flex-direction: column;
    justify-content: space-around;
    height: 60%;
-   width: 300px;
+   width: 38%;
 }
 .social-media a {
    font-size: 16px;
@@ -1171,6 +1171,9 @@ label {
    padding: 10px 15px;
    border-radius: 15px;
    transform: 0.3s;
+}
+.social-media a img {
+   margin-right: 10px;
 }
 .social-media a:hover {
    transform: scale(1.05);
