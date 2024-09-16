@@ -1,5 +1,4 @@
-body,
-html {
+body,html {
    font-family: Arial, Helvetica, sans-serif;
    text-rendering: optimizeLegibility !important;
    -webkit-font-smoothing: antialiased !important;
@@ -275,7 +274,6 @@ header .intro-text {
    background-color: transparent;
    width: 178px;
    height: 68px;
-
    font-family: "Gilroy", Helvetica, sans-serif;
 }
 .features-logotype {
@@ -302,13 +300,18 @@ header .intro-text {
   margin: 0 0 20px;
 } */
 #about h2 {
-   position: relative;
+   /* position: relative; */
    margin-top: 50px;
    margin-bottom: 15px;
    padding-bottom: 15px;
    color: #202020;
    font-size: 40px;
    white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+   #about h2 {
+      font-size: 24px;
+   }
 }
 
 #about .about-text li {
@@ -1278,14 +1281,14 @@ body {
    margin-left: 20px;
 }
 
-.right-column {
+/* .right-column {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
    width: 45%;
    margin-right: 0;
    position: relative;
-}
+} */
 
 .about-text {
    margin-bottom: 20px;
@@ -1368,269 +1371,84 @@ body {
    color: #ffffff;
    background-color: #ddac17;
 }
-
-.benefit-calculator {
-   position: absolute;
-   font-family: "Manrope", sans-serif;
-   top: 30px;
-   left: 40px;
-   color: #000000;
-   font-weight: regular;
-   font-size: 30px;
-   white-space: nowrap;
-}
-
-.calculator-description {
-   margin-top: 20px;
-   color: #a0a0a0;
-   font-weight: regular;
-   font-size: 13px;
-   font-family: "Manrope", sans-serif;
-}
-
-.textarea-container {
-   position: relative;
-   width: 100%;
-   max-width: 450px;
-   height: 100%;
-   margin: 130px 20px 18px 20px;
-}
-
-.input-field {
-   width: 100%;
-   height: 40px;
-   padding: 10px 40px 10px 5px;
-   border-radius: 15px;
-   border: 1px solid #c0c0c0;
-   box-sizing: border-box;
-   font-family: "Manrope", sans-serif;
-   font-size: 14px;
-   color: #a0a0a0;
-   resize: none;
-   overflow: hidden;
-   margin-top: -5px;
-}
-
-.image-button {
-   position: absolute;
-   top: 3%;
-   right: 20px;
-   transform: translateY(-50%);
-   background: transparent;
-   border: none;
-   padding: 0;
-   cursor: pointer;
-   margin-right: -10px;
-}
-
-.image-button img {
-   display: block;
-   width: 30px;
-   height: 30px;
-}
-
-.big-block {
-   width: 100%;
-   max-width: 100%;
-   height: 700px;
-   background-color: #f0f0f0;
-   border-radius: 30px;
+.right-column {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   padding: 20px;
-   box-sizing: border-box;
-   margin-top: 140px;
-   position: relative;
-   margin-left: -10px;
+   background-color: rgba(240, 240, 240, 1);
+   width: 45%;
+   margin-top: 5%;
+   margin-bottom: 2.5%;
+   border-radius: 30px;
 }
-
-.output-container,
-.output2-container,
-.profit-container {
-   width: 100%;
-   max-width: 450px;
-   padding: 5px;
-   border: 1px solid #c0c0c0;
-   border-radius: 15px;
-   background-color: #ffffff;
-   box-sizing: border-box;
+.right-column p {
+   font-family: "Manrope", sans-serif;
+}
+.input-calc {
    display: flex;
    flex-direction: row;
-   align-items: center;
-   height: 40px;
-   min-height: 40px;
-   margin-top: 80px;
+   justify-content: space-between;
+   width: 100%;
+   font-family: "Manrope", sans-serif;
+}
+.input-calculator {
+   background-color: transparent;
+   border-radius: 15px;
+   padding: 5px 10px;
+   width: 100%;
    position: relative;
-}
-
-.output-icon {
-   width: 20px;
-   height: 20px;
-   margin: 0 10px;
-}
-
-.output-label,
-.output2-label,
-.profit-label {
-   font-size: 14px;
-   color: #a0a0a0;
    font-family: "Manrope", sans-serif;
+   margin-bottom: 5%;
+}
+.input-calc img {
+   position: absolute;
+   right: 0;
+}
+.profits {
+   width: 100%;
    display: flex;
-   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 80%;
 }
-
-.textarea-label {
-   position: absolute;
-   left: 20px;
-   top: 100%;
-   font-size: 20px;
+.profit h4 {
    font-family: "Manrope", sans-serif;
-   margin-left: -20px;
-   margin-top: -430px;
-   color: #000000;
 }
-
-.Money1 {
-   position: absolute;
-   top: 80%;
-   left: 20px;
-   font-size: 20px;
+.profit p {
+   background-color: rgba(252, 252, 252, 1);
+   border-radius: 15px;
+   padding: 10px 15px;
    font-family: "Manrope", sans-serif;
-   color: #000000;
-   margin-top: -210px;
-   margin-left: -20px;
 }
-
-.Money2 {
-   position: absolute;
-   top: 80%;
-   left: 20px;
-   font-size: 20px;
+.profit p img {
+   margin-right: 10px;
+}
+.footer-calculator {
    font-family: "Manrope", sans-serif;
-   color: #000000;
-   margin-top: -90px;
-   margin-left: -20px;
 }
 
-.footer-text {
-   position: absolute;
-   bottom: 20px;
-   left: 20px;
-   font-size: 14px;
-   color: #a0a0a0;
-   font-family: "Manrope", sans-serif;
-   text-align: center;
-   width: calc(100% - 40px);
-   margin-top: -20px;
-}
-
-@media (max-width: 768px) {
-   .columns-wrapper {
-      flex-direction: column;
-   }
-
+@media screen and (max-width: 768px) {
    .left-column,
    .right-column {
       width: 100%;
-      margin: 0;
    }
-
-   .left-column {
-      margin-bottom: 20px;
-   }
-
-   .right-column {
-      position: static;
-      margin-top: 20px;
-   }
-
-   .about-text h2 {
-      font-size: 24px;
-   }
-
-   .about-text p {
-      font-size: 14px;
-   }
-
-   .features-block,
-   .additional-block {
-      width: 100%;
-      height: auto;
-   }
-
    .features-blocks {
       flex-direction: column;
    }
-
    .features-block {
       width: 100%;
    }
-
-   .additional-block {
-      margin-top: 20px;
+   .right-column {
+      height: 80vh;
    }
-
-   .textarea-container {
-      margin: 10px 0;
-      max-width: 100%;
-      overflow: hidden;
+   .profits {
+      margin-top: 15%;
+      height: 80%;
    }
-
-   .input-field {
-      height: 35px;
-      padding: 8px 30px 8px 5px;
-      font-size: 12px;
+   #about p img {
+      margin: 0 10px;
    }
-
-   .image-button img {
-      width: 25px;
-      height: 25px;
-   }
-
-   .big-block {
-      height: auto;
-      margin-top: 20px;
-   }
-
-   .output-container,
-   .output2-container,
-   .profit-container {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      padding: 10px;
-   }
-   .output-container {
-      margin-top: 0px;
-   }
-   .output-icon {
-      width: 15px;
-      height: 15px;
-   }
-
-   .output-label,
-   .output2-label,
-   .profit-label {
-      font-size: 12px;
-   }
-
-   .textarea-label,
-   .Money1,
-   .Money2 {
-      font-size: 16px;
-   }
-
-   .benefit-calculator {
-      position: static;
-      top: auto;
-      left: auto;
-      font-size: 24px;
-   }
-
-   .footer-text {
-      position: static;
-      font-size: 12px;
-      text-align: center;
+   .profit p {
+      padding: 10px 15px;
+      align-items: center;
    }
 }
