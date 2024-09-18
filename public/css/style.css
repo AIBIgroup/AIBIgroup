@@ -966,6 +966,7 @@ label {
    flex-direction: row;
    height: 80vh;
    justify-content: space-between;
+   margin-bottom: 10%;
 }
 .row2 .main {
    display: flex;
@@ -1454,7 +1455,7 @@ body {
       height: 80vh;
    }
    .profits {
-      margin-top: 10%;
+      /* margin-top: 10%; */
       height: 80%;
    }
    #about p img {
