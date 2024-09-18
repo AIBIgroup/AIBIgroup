@@ -1234,7 +1234,9 @@ label {
       height: 70vh;
    }
    .mockup img {
-      width: 100%;
+      width: 80%;
+      aspect-ratio: 1/1;
+      height: auto;
    }
    .actions .text {
       width: 100%;
