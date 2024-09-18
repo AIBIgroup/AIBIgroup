@@ -1,10 +1,10 @@
-import React from "react";export const Video = () => {
+import React from "react";
+export const Video = () => {
    return (
       <div className="video-section">
-         <div className="container">
+         <div className="video-container">
             <iframe
                className="video"
-               width="560"
                height="315"
                src="https://www.youtube.com/embed/Ud5FirIK_mI"
                title="YouTube video player"

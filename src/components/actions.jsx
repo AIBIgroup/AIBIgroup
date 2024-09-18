@@ -14,13 +14,19 @@ import React from "react";export const Actions = () => {
                   <p>Если у вас есть вопросы, вы можете написать нам на</p>
                </div>
                <div className="social-media">
-                  <a id="wa" href="#">
-                     <img src={`${process.env.PUBLIC_URL}/img/icon4.png`} alt="" />
-                     написать на WhatsApp
+                  <a id="wa" href="https://wa.me/77782576875">
+                     <img
+                        src={`${process.env.PUBLIC_URL}/img/icon4.png`}
+                        alt=""
+                     />
+                     Написать на WhatsApp
                   </a>
-                  <a id="insta" href="#">
-                     <img src={`${process.env.PUBLIC_URL}/img/icon5.png`} alt="" />
-                     написать на Instagram
+                  <a id="insta" href="https://www.instagram.com/aibigroup/">
+                     <img
+                        src={`${process.env.PUBLIC_URL}/img/icon5.png`}
+                        alt=""
+                     />
+                     Написать на Instagram
                   </a>
                </div>
             </div>

@@ -42,7 +42,7 @@ export const Intro = () => {
                               src={`${process.env.PUBLIC_URL}/img/email.png`}
                               alt="email"
                            />
-                           example@gmail.com
+                           aibigroupinvest@gmail.com
                         </p>
                      </div>
                   </div>
@@ -75,7 +75,7 @@ export const Intro = () => {
                               placeholder="Имя"
                            />
                         </div>
-                        <div className="intro-input">
+                        {/* <div className="intro-input">
                            <label htmlFor="lastname"></label>
                            <input
                               type="text"
@@ -83,7 +83,7 @@ export const Intro = () => {
                               name="lastname"
                               placeholder="Фамилия"
                            />
-                        </div>
+                        </div> */}
                         <div className="intro-input">
                            <label htmlFor="phone"></label>
                            <input

@@ -1,21 +1,24 @@
-import React from "react";
-export const Footer = () => {
+import React from "react";export const Footer = () => {
    return (
       <>
-         <div className="contact-info">
-            <p className="contact-address">Адрес офиса</p>
-            <p className="contact-hours">Режим Работы: с 10:00 - 18:00</p>
-            <p className="contact-address-large">Ул.Сыганак 47</p>
-         </div>
+         <div className="container">
+            <div className="footer-info">
+               <div className="info">
+                  <p className="name">Адрес офиса</p>
+                  <p className="name">Режим Работы: с 10:00 - 18:00</p>
+                  <p className="element">Ул.Сыганак 47</p>
+               </div>
 
-         <div className="phone-info">
-            <p className="phone-label">Телефон номер</p>
-            <p className="phone-number">+7 (778) 257 68 75</p>
-         </div>
+               <div className="info">
+                  <p className="name">Телефон номер</p>
+                  <p className="element">+7 (778) 257 68 75</p>
+               </div>
 
-         <div className="email-info">
-            <p className="email-label">Электронная почта</p>
-            <p className="email-address">example.com</p>
+               <div className="info">
+                  <p className="name">Электронная почта</p>
+                  <p className="element">aibigroupinvest@gmail.com</p>
+               </div>
+            </div>
          </div>
 
          <footer className="footer">
