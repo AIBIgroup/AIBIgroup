@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";import PropTypes from "prop-types"; // Импортируем PropTypes
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types"; // Импортируем PropTypes
 
 // Функция для форматирования чисел с разделением тысяч
 const formatNumber = (num) => {
@@ -18,7 +19,8 @@ export const About = (props) => {
       if (!isNaN(inputValue) && inputValue > 0) {
          const areaValue = Math.floor(inputValue / 700000);
          const profitValue = areaValue * 10300;
-         const benefitValue = inputValue * 1.2;
+         // const benefitValue = inputValue * 1.2;
+         const benefitValue = profitValue * 12;
 
          setArea(formatNumber(areaValue) + " м²");
          setProfit(formatNumber(profitValue));
@@ -58,9 +60,9 @@ export const About = (props) => {
                               className="features-block text-left"
                               data-number="02"
                            >
-                              Гарантированный обратный выкуп через 2 года с 20%
+                              Гарантируем обратный выкуп через 2 года с 20%
                               надбавкой к первоначальной сумме инвестиций, что
-                              позволит увеличить ваши вложения.
+                              позволит преумножить ваши вложения.
                            </div>
                            <div
                               className="features-block text-left"
@@ -105,7 +107,7 @@ export const About = (props) => {
                         </div>
                         <div className="profits">
                            <div className="profit">
-                              <h4>Площадь</h4>
+                              <h4>Площадь офиса</h4>
                               <p>
                                  <img
                                     src="img/icon1.png"
@@ -116,7 +118,7 @@ export const About = (props) => {
                               </p>
                            </div>
                            <div className="profit">
-                              <h4>Прибыль</h4>
+                              <h4>Прибыль в месяц</h4>
                               <p>
                                  <img
                                     src="img/icon2.png"
@@ -127,7 +129,7 @@ export const About = (props) => {
                               </p>
                            </div>
                            <div className="profit">
-                              <h4>Выгода</h4>
+                              <h4>Прибыль в год</h4>
                               <p>
                                  <img
                                     src="img/icon3.png"
@@ -138,8 +140,9 @@ export const About = (props) => {
                               </p>
                            </div>
                            <p className="footer-calculator">
-                              Все права на публикуемые на сайте материалы
-                              принадлежат компании ABI Group © 2024
+                              Все расчеты, представленные на сайте, носят
+                              исключительно ориентировочный характер и могут
+                              отличаться от фактических данных
                            </p>
                         </div>
                      </div>
