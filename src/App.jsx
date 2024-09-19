@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from "react";import { Navigation } from "./components/navigation";
-// import { Header } from "./components/header";
+import React, { useState, useEffect } from "react";
+import { Navigation } from "./components/navigation";
 import { Intro } from "./components/intro";
-// import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Actions } from "./components/actions";
+import { Video } from "./components/video";
+import { Footer } from "./components/footer";
+import { FixedButton } from "./components/button";
+// import { Header } from "./components/header";
+// import { Features } from "./components/features";
 // import { Services } from "./components/services";
 // import { Gallery } from "./components/gallery";
 // import { Testimonials } from "./components/testimonials";
 // import { Team } from "./components/Team";
 // import { Contact } from "./components/contact";
-import { Video } from "./components/video";
 // import { Statistics } from "./components/statistics";
 // import { Careers } from "./components/careers";
 // import { News } from "./components/news";
-import { Footer } from "./components/footer";
 // import { Slider } from "./components/slider";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -38,6 +40,8 @@ const App = () => {
          <Video data={landingPageData.Video} />
          <Actions data={landingPageData.Actions} />
          <Footer data={landingPageData.Footer} />
+         <FixedButton data={landingPageData.FixedButton} />
+         {/* <Button data={landingPageData.Button} /> */}
          {/* <Services data={landingPageData.Services} /> */}
          {/* <Statistics data={landingPageData.Statistics} /> */}
          {/* <Careers data={landingPageData.Careers} /> */}
