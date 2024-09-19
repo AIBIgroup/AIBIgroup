@@ -53,7 +53,7 @@ import React from "react";export const Navigation = () => {
                   </li>
                   <li>
                      <a
-                        href="#services"
+                        href="#footer"
                         className="page-scroll"
                         style={{ color: "#000000" }}
                      >
@@ -62,10 +62,17 @@ import React from "react";export const Navigation = () => {
                   </li>
                   <li>
                      <a
-                        href="#portfolio"
+                        href="tel:+77782576875"
                         className="page-scroll"
-                        style={{ color: "#0000" }}
-                     ></a>
+                        style={{
+                           color: "#fefefe",
+                           backgroundColor: "#4caf50",
+                           borderRadius: "15px 15px 0 0",
+                           padding: "5px 10px",
+                        }}
+                     >
+                        Позвонить
+                     </a>
                   </li>
                </ul>
             </div>
