@@ -1465,6 +1465,8 @@ body {
    }
    .left-column {
       margin-left: 0;
+      flex-direction: row;
+      margin-top: 5%;
    }
    .features-blocks {
       flex-direction: column;
