@@ -1129,6 +1129,7 @@ label {
 @media screen and (max-width: 768px) {
    #intro {
       padding-top: 26%;
+      margin-bottom: 15%;
    }
    .row2 {
       flex-direction: column;
