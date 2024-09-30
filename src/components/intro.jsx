@@ -33,7 +33,7 @@ export const Intro = () => {
                               src={`${process.env.PUBLIC_URL}/img/phone.png`}
                               alt="phone"
                            />
-                           +7 (778) 257 68 75
+                           +7 (777) 438 2855
                         </p>
                      </div>
                      <div className="item">
