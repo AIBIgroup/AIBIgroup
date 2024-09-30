@@ -14,7 +14,7 @@ import React from "react";export const Actions = () => {
                   <p>Если у вас есть вопросы, вы можете написать нам на</p>
                </div>
                <div className="social-media">
-                  <a id="wa" href="https://wa.me/77782576875">
+                  <a id="wa" href="https://wa.me/77774382855">
                      <img
                         src={`${process.env.PUBLIC_URL}/img/icon4.png`}
                         alt=""
