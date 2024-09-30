@@ -12,7 +12,7 @@ export const Footer = () => {
 
                <div className="info">
                   <p className="name">Телефон номер</p>
-                  <p className="element">+7 (778) 257 68 75</p>
+                  <p className="element">7 (777) 438 2855</p>
                </div>
 
                <div className="info">
