@@ -98,14 +98,29 @@
    <div id="root"></div>
 
    <!-- Скрытая HTML-форма для Netlify -->
-   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="name" />
-      <input type="text" name="lastname" />
-      <input type="text" name="phone" />
-      <textarea name="comments"></textarea>
-   </form>
+<form name="contact" netlify netlify-honeypot="bot-field" hidden onsubmit="return validateForm()">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="text" name="lastname" placeholder="Lastname" required />
+    <input type="text" name="phone" placeholder="Phone" pattern="[0-9]{10,}" title="Введите корректный номер телефона" required />
+    <textarea name="comments" placeholder="Comments" required></textarea>
+    <button type="submit">Submit</button>
+</form>
 
+<script>
+function validateForm() {
+    const name = document.forms["contact"]["name"].value;
+    const lastname = document.forms["contact"]["lastname"].value;
+    const phone = document.forms["contact"]["phone"].value;
+    const comments = document.forms["contact"]["comments"].value;
+
+    if (name == "" || lastname == "" || phone == "" || comments == "") {
+        alert("Все поля должны быть заполнены.");
+        return false;
+    }
+    return true;
+}
+</script>
    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
    <script type="text/javascript" src="js/bootstrap.js"></script>
    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
